@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOTEING APP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Online Voting System</h1>
+    <hr />
+    <form action="../API/login.php" method="post">
+      <h3>Login</h3>
+      <input type="text" name="name" id="" placeholder="Name" required />
+      <input type="password" name="password" id="" placeholder="Password" required />
+      <select name="role" id="">
+        <option value="1">Voter</option>
+        <option value="2">Group</option>
+      </select>
+      <button type="submit">Login</button>
+    </form>
+    New User? <a href="../Routes/register.html">Register Now</a>
+  </body>
+</html>
