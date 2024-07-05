@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title> 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1>Online Voting System</h1>
-    <hr>
+    <hr />
     <h3>Registration</h3>
-    <form action="../API/register.php" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <div>
-                <input type="text" placeholder="Username" name="name">
-            </div>
-            <div>
-                <input type="number" name="mobile" id="" placeholder="Mobile No.">
-            </div>
-            <div>
-                <input type="email" name="email" id="" placeholder="Email">
-            </div>
-            <div>
-                <input type="password" name="password" id="" placeholder="Password">
-            </div>
-            <div>
-                <input type="password" name="cpassword" id="" placeholder="Confirm Password">
-            </div>
-            <div>
-                <textarea name="address" id="" placeholder="Address"></textarea>
-            </div>
-            <div>
-                Upload Image :<input type="file" name="photo" id="">
-            </div>
-            <div>
-                Select Role :
-                <select name="role" id="">
-                    <option value="1">Voter</option>
-                    <option value="2">Group</option>
-                </select>
-            </div>
+    <form
+      action="../API/register.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div class="form-group">
+        <div>
+          <input type="text" placeholder="Username" name="name" />
         </div>
-        <button type="submit">Register</button>
+        <div>
+          <input type="number" name="mobile" id="" placeholder="Mobile No." />
+        </div>
+        <div>
+          <input type="email" name="email" id="" placeholder="Email" />
+        </div>
+        <div>
+          <input type="password" name="password" id="" placeholder="Password" />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="cpassword"
+            id=""
+            placeholder="Confirm Password"
+          />
+        </div>
+        <div>
+          <textarea name="address" id="" placeholder="Address"></textarea>
+        </div>
+        <div>Upload Image :<input type="file" name="photo" id="" /></div>
+        <div>
+          Select Role :
+          <select name="role" id="">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Register</button>
     </form>
-    <br>
+    <br />
     Already User? <a href="../Login/index.html">Login Here</a>
-</body>
+  </body>
 </html>

@@ -65,12 +65,12 @@ if ($_SESSION['userData']['status'] == 0) {
                             ?>
                                 <input type="submit" name="votebtn" id="" value="Vote" id="votebtn">
                             <?php
-                            } else { 
+                            } else {
                             ?>
                                 <button disabled type="button" name="votebtn" id="" value="Vote" id="voted">Voted</button>
-                                <?php
+                            <?php
                             }
-                                ?>
+                            ?>
 
 
                         </form>

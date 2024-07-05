@@ -12,16 +12,24 @@ $filePath = $_FILES['photo']['tmp_name'];
 $role = $_POST['role'];
 
 
+
+// $sql1 = "select * from user";
+// $co = mysqli_query($connect, $sql1);
+
+// if (mysqli_num_rows($co) > 0) {
+//     echo '
+//     <script>
+//        alert("Tabel exsist")
+//        window.location = "../Login/index.html"
+//    </script>
+//    ';
+// }
+
 if ($password == $cpassword) {
 
     move_uploaded_file($filePath, "../Uploads_image/$image");
-    // {
-    //     echo "File Uploaded";
-    // } else {
-    //     echo "Uploading Failed";
-    // }
 
-    $query = "insert into user(name,mobile,email,password,address,photo,role,status,votes) values('$name','$mobile','$email','$password','$address','$image','$role',0,0)";
+    $query = "insert into user(name,mobile,password,email,address,photo,role,status,votes) values('$name','$mobile','$password','$email','$address','$image','$role',0,0)";
     $sql = mysqli_query($connect, $query);
 
     if ($sql) {
@@ -33,6 +41,7 @@ if ($password == $cpassword) {
         </script>
         ';
     } else {
+        // echo mysqli_error($connect);
         echo '
              <script>
             alert("ERROR NOT REGISTERED")
