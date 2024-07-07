@@ -32,8 +32,8 @@ if ($_SESSION['userData']['status'] == 0) {
 <body>
     <div class="mainSection con ">
         <div id="headerSection">
-            <a href="../Login/index.html"><button> Back </button></a>
-
+            <!-- <a href="../Login/index.html"><button> Back </button></a> -->
+            <a href="edit.php"><button>Edit Detail</button></a>
             <h1>Online Voting System</h1>
             <a href="logout.php"><button> Logout </button></a>
         </div>

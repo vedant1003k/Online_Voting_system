@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mainSection {
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+    /* width: 100; */
+    /* gap: 20px; */
+}
+
+#headerSection {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    /* gap: 20px; */
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#headerSection button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out
+}
+
+#headerSection button:hover {
+    background-color: #4CAF50;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.editUserForm {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editUserForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.editUserForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.editUserForm input[type="text"],
+.editUserForm input[type="email"],
+.editUserForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.editUserForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.editUserForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.editUserForm button {
+    background-color: rgb(194, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.editUserForm button:hover {
+    background-color: red;
+    transition: 0.3s ease-in-out;
+}
